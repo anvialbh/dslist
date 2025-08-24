@@ -12,7 +12,7 @@ public interface GameRepository extends JpaRepository<Game, Long> {
 	
 	String sql = "SELECT g.id"
 			        + ", g.title "
-			        + ", g.game_year AS `year` "
+			        + ", g.game_year "
 			        + ", g.img_url AS imgUrl "
 			        + ", g.short_description AS shortDescription "
 			        + ", b.position "
